@@ -1,0 +1,21 @@
+{
+    "name": "accessibility",
+    "version": "0.1.0",
+    "description": "",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/materliu/accessibility.git"
+    },
+    "author": "Mater Liu <materliu@gmail.com>",
+    "license": "Apache 2",
+    "dependencies": {},
+    "devDependencies": {
+        "grunt": "~0.4.1",
+        "grunt-gitbook": "0.3.2",
+        "grunt-gh-pages": "0.9.1",
+        "grunt-contrib-clean": "~0.5.0"
+    },
+    "peerDependencies": {
+        "grunt": "~0.4.1"
+    }
+}
