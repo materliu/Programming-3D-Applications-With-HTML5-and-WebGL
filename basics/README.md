@@ -1,19 +1,4 @@
-# Basics about Programming
+# 序言
 
-In this first chapter, we'll learn the basics of programming and the Javascript language.
+将近20年之久了，3D在Web上的发展一直非常曲折。在1994年，VRML被认为是明日之星，吸引了来自行业内的关注，然而在第一次互联网大爆炸中却不幸地成为了主流web开发的弃子。2000年左右，新的明日之星Shockwave 3D被认为有希望使游戏开发变得大众化；然而到2004年，Shockwave的相关产物也被抛进了孤儿院。在2007年，一个虚拟世界系统第二人生(Second Life)跨过科技媒体机构登上了商业周刊的封面，从此开启了一个新的3D抢滩时代，事实上，居民趋之若鹜租用第二人生的岛屿，试图殖民建立一个从没如此形象化的互联网世界。截止到2010年，虚拟世界已经成为昨日新闻，消费者开始痴迷于社交和手机游戏来满足他们的娱乐需求。从某种角度来看，这是一连串的失败，但是从另外一个角度看，这不过是考验而已。
 
-Programming means writing code. A book is made up of chapters, paragraphs, sentences, phrases, words and finally punctuation and letters, likewise a program can be broken down into smaller and smaller components. For now, the most important is a statement. A statement is analogous to a sentence in a book. On its own, it has structure and purpose, but without the context of the other statements around it, it isn't that meaningful.
-
-A statement is more casually (and commonly) known as a *line of code*. That's because statements tend to be written on individual lines. As such, programs are read from top to bottom, left to right. You might be wondering what code (also called source code) is. That happens to be a broad term which can refer to the whole of the program or the smallest part. Therefore, a line of code is simply a line of your program.
-
-Here is a simple example:
-
-```javascript
-var hello = "Hello";
-var world = "World";
-
-// Message equals "Hello World"
-var message = hello + " " + world;
-```
-
-This code can be executed by another program called an *interpreter* that will read the code, and execute all the statements in the right order.
