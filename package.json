@@ -1,10 +1,10 @@
 {
-    "name": "accessibility",
+    "name": "Programming-3D-Applications-With-HTML5-and-WebGL",
     "version": "0.1.0",
     "description": "",
     "repository": {
         "type": "git",
-        "url": "https://github.com/materliu/accessibility.git"
+        "url": "https://github.com/materliu/Programming-3D-Applications-With-HTML5-and-WebGL.git"
     },
     "author": "Mater Liu <materliu@gmail.com>",
     "license": "Apache 2",
