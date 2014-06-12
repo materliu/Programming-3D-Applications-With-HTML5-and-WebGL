@@ -11,3 +11,6 @@
 ![Figure1-1](http://materliu.github.io/Programming-3D-Applications-With-HTML5-and-WebGL/assets/Chapter1-Introduction/figure1-1.jpg)
 
 图标1-1. 谷歌的100,000 Stars项目
+
+100,000 Stars是谷歌的数据艺术团队为了展示Chrome浏览器的超强特性而开展的一个实验项目。虽然这个项目是实验性的，但是它所用到的技术却不是：它构建于现如今大多数浏览器都支持的HTML5特性之上。银河系和星体通过WebGL来实时渲染（WebGL是硬件加速3D web图形图像的新标准）；相对于其对应星体放置的标签是通过CSS3中现有的3D转换实现的；以及浮层内容可以无缝和3D内容混合在一起得益于浏览器的组合特性，即所有的页面元素被统一呈现。
+
