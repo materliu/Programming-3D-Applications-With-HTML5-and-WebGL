@@ -8,3 +8,5 @@
 * 基本上所有的手机浏览器也都支持WebGL，包括Android上的Chrome，Android和Firefox OS上的Firefox， Kindle Fire HDX上的Amazon Silk，Intel的新Tizen操作系统上和BlackBerry 10上的浏览器。在手机Safari上WebGL的支持受限，只在iAds框架中可用。(译者注：2014年6月2日苹果WWDC大会发布的iOS8中，Safari开始全面支持WebGL。)
 
 * CSS 3D 变换在所有浏览器和移动平台都支持。CSS定制滤镜只在桌面Chrome，Safari，移动Safari和BlackBerry10中被实验性支持，IE和Firefox不支持。
+
+很明显，这样的情况并不是很乐观，但这也是web应用开发征程中的必经阶段。跨浏览器支持一直都是臭名昭著的困难，然而随着HTML5特性的爆发式增长和设备与操作系统的更新换代，情况已经变得好多了。值得欣慰的是另一个备选方案更糟糕，那就是本地程序，其更难构建，测试，部署和分发。就说这么多吧，也许21世纪web开发者命中注定如此。
