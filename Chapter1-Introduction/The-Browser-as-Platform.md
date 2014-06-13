@@ -18,5 +18,5 @@ HTML5浏览器同时也包含了一些其他的特性，比如说多线程编程
 
 图表1-2展示了一个运行在Firefox开发版下的Epic公司的游戏Epic Citadel的演示版本。 Epic Citadel使用WebGL来渲染图形，但是真正让其与众不同的是在游戏引擎性能上的重要技术成就。这款游戏使用了Epic的Unreal引擎的一个版本，Unreal引擎最初是依赖于操作系统代码的C++程序，通过使用Emscripten 编译器和asm.js，被移植到了浏览器上，asm.js是一个新的被优化的底层JavaScript子级。只需简单的输入一个URL，浏览器用户就能获得一个美丽渲染的全屏的以每秒60帧率运行的操作游戏体验，而这只需很少的下载时间同时还不需要安装。
 
-
+![Figure1-2](http://materliu.github.io/Programming-3D-Applications-With-HTML5-and-WebGL/assets/Chapter1-Introduction/figure1-2.jpg)
 	
