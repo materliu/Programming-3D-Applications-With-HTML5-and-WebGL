@@ -42,7 +42,7 @@
 
 
         
-    <div class="book" data-github="materliu/accessibility" data-level="2" data-basepath=".." data-revision="1402557405966">
+    <div class="book" data-github="materliu/accessibility" data-level="2" data-basepath=".." data-revision="1402624587565">
     <div class="book-header">
     <!-- Actions Left -->
     
@@ -154,6 +154,14 @@
                             
                         </li>
                     
+                        <li  data-level="2.2" data-path="Chapter1-Introduction/The-Browser-as-Platform.html">
+                            
+                            <a href="../Chapter1-Introduction/The-Browser-as-Platform.html">
+                                <i class="fa fa-check"></i> <b>2.2.</b> 浏览器平台
+                            </a>
+                            
+                        </li>
+                    
                 </ul>
                 
             </li>
@@ -166,19 +174,21 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 75%;min-width: 50%;"></div>
+        <div class="inner" style="width: 60%;min-width: 40%;"></div>
     </div>
     <div class="chapters">
     
         <a href="../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
     
-        <a href="../basics/README.html" title="序言" class="chapter done new-chapter" data-progress="1" style="left: 25%;"></a>
+        <a href="../basics/README.html" title="序言" class="chapter done new-chapter" data-progress="1" style="left: 20%;"></a>
     
-        <a href="../basics/audience.html" title="受众" class="chapter done " data-progress="1.1" style="left: 50%;"></a>
+        <a href="../basics/audience.html" title="受众" class="chapter done " data-progress="1.1" style="left: 40%;"></a>
     
-        <a href="../Chapter1-Introduction/README.html" title="第一章. 概论" class="chapter done new-chapter" data-progress="2" style="left: 75%;"></a>
+        <a href="../Chapter1-Introduction/README.html" title="第一章. 概论" class="chapter done new-chapter" data-progress="2" style="left: 60%;"></a>
     
-        <a href="../Chapter1-Introduction/HTML5-a-new-visual-medium.html" title="新的视觉载体HTML5" class="chapter  " data-progress="2.1" style="left: 100%;"></a>
+        <a href="../Chapter1-Introduction/HTML5-a-new-visual-medium.html" title="新的视觉载体HTML5" class="chapter  " data-progress="2.1" style="left: 80%;"></a>
+    
+        <a href="../Chapter1-Introduction/The-Browser-as-Platform.html" title="浏览器平台" class="chapter  " data-progress="2.2" style="left: 100%;"></a>
     
     </div>
 </div>
@@ -193,7 +203,11 @@
 <p>3D图像几乎和电脑本身一样久远，可以追溯到1960年代。它已经被用于跨域工程，教育，培训，建筑，金融，销售，市场，游戏以及娱乐的各种程序中。历史上，3D应用程序依赖于高端电脑系统和昂贵的软件。但在最近的十年这一情况得到了极大的改观。3D处理硬件基本在每台电脑和手机中都有，今天的消费智能机处理图形图像的能力远强于15年前的专业工作站。最重要的是，用于渲染3D的软件不仅可以轻易得到而且免费。它被称为浏览器。</p>
 <p>100,000 Stars是一个基于浏览器的用来在银河系虚拟漫游我们星球周边的3D模拟器，图表1-1是100,000 Stars。通过使用鼠标，你可以旋转星系中的星球，并在某个感兴趣的星体上放大。星体被按照他们原有的形体和颜色被模拟呈现。每个星体上都有他们常用名字的标签，当你的鼠标悬停到标签上，它便高亮。点击标签，一个浮层便会出现，上边是维基百科上关于这颗星球的介绍。点击浮层上介绍中的某个超链接，浏览器会在新标签中打开对应的地址。100,000 Stars通过美丽的渲染，动画效果，宏伟的声效，以及与2D用户界面的巧妙组合带来了一种绝妙的交互体验。</p>
 <p><img src="http://materliu.github.io/Programming-3D-Applications-With-HTML5-and-WebGL/assets/Chapter1-Introduction/figure1-1.jpg" alt="Figure1-1"></p>
-<p>图标1-1. 谷歌的100,000 Stars项目</p>
+<p>图标1-1. 谷歌的100,000 Stars项目; 图片提供 Google,Inc.</p>
+<p>100,000 Stars是谷歌的数据艺术团队为了展示Chrome浏览器的超强特性而开展的一个实验项目。虽然这个项目是实验性的，但是它所用到的技术却不是：它构建于现如今大多数浏览器都支持的HTML5特性之上。银河系和星体通过WebGL来实时渲染（WebGL是硬件加速3D web图形图像的新标准）；相对于其对应星体放置的标签是通过CSS3中现有的3D转换实现的；以及浮层内容可以无缝和3D内容混合在一起得益于浏览器的组合特性，即所有的页面元素被统一呈现。</p>
+<p>本书就是来说说如何通过利用当代浏览器的这些惊人特性来创建一个全新的特性相关的视觉上的应用。这些应用中的一些可能看上去跟之前的一些产品，那些传统的3D产品很像，我们仅仅是重构之后拿出来并降低成本。但令人兴奋的点在于这些新奇的消费者应用在广告，产品市场，消费者支持，教育，培训，旅游，游戏，以及娱乐方面的无尽可能。3D通过和web技术的结合给交互体验带来了一个新的维度，第三维现如今可以被这个星球上的任何人轻易获取。</p>
+<p>【页内标注】100,000 Stars项目算得上交互媒体开发的一个标杆。其中的一个开发者，Michael Chang写了一个关于这个项目的很棒的案例研究。想看它是如何被开发的，访问：http://
+www.html5rocks.com/en/tutorials/casestudies/100000stars/.【译者注：需翻墙】</p>
 
                     
                     </section>

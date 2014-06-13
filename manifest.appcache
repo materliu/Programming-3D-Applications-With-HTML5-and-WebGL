@@ -1,9 +1,10 @@
 CACHE MANIFEST
-# Revision 1402557405967
+# Revision 1402624587565
 
 CACHE:
 Chapter1-Introduction/HTML5-a-new-visual-medium.html
 Chapter1-Introduction/README.html
+Chapter1-Introduction/The-Browser-as-Platform.html
 index.html
 basics/README.html
 basics/audience.html
@@ -43,8 +44,8 @@ gitbook/jsrepl/sandbox.html
 gitbook/jsrepl/sandbox.js
 gitbook/print.css
 gitbook/style.css
-gitbook/plugins/gitbook-plugin-mixpanel/plugin.js
 gitbook/plugins/gitbook-plugin-mathjax/plugin.js
+gitbook/plugins/gitbook-plugin-mixpanel/plugin.js
 
 NETWORK:
 *
