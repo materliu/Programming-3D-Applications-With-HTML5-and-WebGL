@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Revision 1402750986388
+# Revision 1402751475368
 
 CACHE:
 Chapter1-Introduction/3D-Coordinate-Systems.html
@@ -7,8 +7,8 @@ Chapter1-Introduction/3D-Graphics-Basics.html
 Chapter1-Introduction/Browser-Realities.html
 Chapter1-Introduction/HTML5-a-new-visual-medium.html
 Chapter1-Introduction/Materials-Textures-and-Lights.html
-Chapter1-Introduction/README.html
 Chapter1-Introduction/Meshes-Polygons-and-Vertices.html
+Chapter1-Introduction/README.html
 Chapter1-Introduction/The-Browser-as-Platform.html
 Chapter1-Introduction/Transforms-and-Matrices.html
 Chapter1-Introduction/What-Is-3D.html
