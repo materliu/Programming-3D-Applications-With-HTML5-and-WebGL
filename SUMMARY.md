@@ -9,3 +9,6 @@
 	* [3D图像基础](Chapter1-Introduction/3D-Graphics-Basics.md)
 	* [3D是啥](Chapter1-Introduction/What-Is-3D.md)
 	* [3D坐标系统](Chapter1-Introduction/3D-Coordinate-Systems.md)
+	* [网格，多边形和顶点](Chapter1-Introduction/Meshes-Polygons-and-Vertices.md)
+	* [材料，纹理和光束](Chapter1-Introduction/Materials-Textures-and-Lights.md)
+	* [变换和矩阵](Chapter1-Introduction/Transforms-and-Matrices.md)
