@@ -3,7 +3,7 @@
     <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
         
         <meta charset="UTF-8">
-        <title>浏览器平台 | Programming-3D-Applications-With-HTML5-and-WebGL</title>
+        <title>3D是啥 | Programming-3D-Applications-With-HTML5-and-WebGL</title>
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="robots" content="index, follow">
@@ -13,13 +13,13 @@
         <meta name="generator" content="www.gitbook.io">
 
         
-        <link rel="next" href="../Chapter1-Introduction/Browser-Realities.html" />
+        <link rel="next" href="../Chapter1-Introduction/3D-Coordinate-Systems.html" />
         
         
-        <link rel="prev" href="../Chapter1-Introduction/HTML5-a-new-visual-medium.html" />
+        <link rel="prev" href="../Chapter1-Introduction/3D-Graphics-Basics.html" />
         
 
-        <meta property="og:title" content="浏览器平台 | Programming-3D-Applications-With-HTML5-and-WebGL">
+        <meta property="og:title" content="3D是啥 | Programming-3D-Applications-With-HTML5-and-WebGL">
         <meta property="og:site_name" content="Programming-3D-Applications-With-HTML5-and-WebGL">
         <meta property="og:type" content="book">
         <meta property="og:locale" content="en_US">
@@ -42,7 +42,7 @@
 
 
         
-    <div class="book" data-github="materliu/accessibility" data-level="2.2" data-basepath=".." data-revision="1402749378457">
+    <div class="book" data-github="materliu/accessibility" data-level="2.5" data-basepath=".." data-revision="1402749378457">
     <div class="book-header">
     <!-- Actions Left -->
     
@@ -108,7 +108,7 @@
             <a href="https://github.com/materliu/accessibility/issues" target="blank">Questions and Issues</a>
         </li>
         <li>
-            <a href="https://github.com/materliu/accessibility/edit/master/Chapter1-Introduction/The-Browser-as-Platform.md" target="blank">Edit and Contribute</a>
+            <a href="https://github.com/materliu/accessibility/edit/master/Chapter1-Introduction/What-Is-3D.md" target="blank">Edit and Contribute</a>
         </li>
         <li class="divider"></li>
         
@@ -230,7 +230,7 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 41.666666666666664%;min-width: 33.333333333333336%;"></div>
+        <div class="inner" style="width: 66.66666666666667%;min-width: 58.333333333333336%;"></div>
     </div>
     <div class="chapters">
     
@@ -246,11 +246,11 @@
     
         <a href="../Chapter1-Introduction/The-Browser-as-Platform.html" title="浏览器平台" class="chapter done " data-progress="2.2" style="left: 41.666666666666664%;"></a>
     
-        <a href="../Chapter1-Introduction/Browser-Realities.html" title="浏览器支持现状" class="chapter  " data-progress="2.3" style="left: 50%;"></a>
+        <a href="../Chapter1-Introduction/Browser-Realities.html" title="浏览器支持现状" class="chapter done " data-progress="2.3" style="left: 50%;"></a>
     
-        <a href="../Chapter1-Introduction/3D-Graphics-Basics.html" title="3D图像基础" class="chapter  " data-progress="2.4" style="left: 58.333333333333336%;"></a>
+        <a href="../Chapter1-Introduction/3D-Graphics-Basics.html" title="3D图像基础" class="chapter done " data-progress="2.4" style="left: 58.333333333333336%;"></a>
     
-        <a href="../Chapter1-Introduction/What-Is-3D.html" title="3D是啥" class="chapter  " data-progress="2.5" style="left: 66.66666666666667%;"></a>
+        <a href="../Chapter1-Introduction/What-Is-3D.html" title="3D是啥" class="chapter done " data-progress="2.5" style="left: 66.66666666666667%;"></a>
     
         <a href="../Chapter1-Introduction/3D-Coordinate-Systems.html" title="3D坐标系统" class="chapter  " data-progress="2.6" style="left: 75%;"></a>
     
@@ -265,20 +265,14 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_7">
+                    <section class="normal" id="section-gitbook_10">
                     
-                        <h1 id="-">浏览器平台</h1>
-<p>虽然HTML5为Web带来了富图形图像，但是如果没有必要的浏览器发展的支持便会毫无意义。实际上，是一系列的提升，为HTML5开发富互联网应用铺平了道路：</p>
-<p>JavaScript虚拟机性能</p>
-<pre><code>WebGL和Canvas2D都是JavaScript API；背后的JavaScript代码能跑多快，意味着动画和交互可以多快。几年前，虚拟机的性能问题让3D开发不能在实践应用中得以推广。谢天谢地，如今的虚拟机很给力。
-</code></pre><p>混合加速</p>
-<pre><code>浏览器要负责在页面上把各种元素迅速混合，并且不能有视觉痕迹。随着内容动态效果越来越强，浏览器在混合上也取得了巨大进步，包括对2D和3D等所有视觉元素使用3D硬件渲染。
-</code></pre><p>动画支持</p>
-<pre><code>在驱动动画上，通过引入了requestAnimationFrame()函数取代setInterval()和setTimeout()来进行提升。这个新方法可以大大提升性能，并通过允许开发者使用浏览器重绘内置页面元素的同一通道来重绘canvas元素的内容来消除视觉痕迹。
-</code></pre><p>HTML5浏览器同时也包含了一些其他的特性，比如说多线程编程(Web Workers)，全双工TCP/IP网络(WebSockets)，本地数据存储，以及更多的开发者可以用来创造世界级应用的功能。这些特性和WebGL, CSS3 3D,以及Canvas元素一起提供了一个革命性的新平台，借助这个平台我们可以在任何计算机和设备上构建相关的视觉程序。</p>
-<p>图表1-2展示了一个运行在Firefox开发版下的Epic公司的游戏Epic Citadel的演示版本。 Epic Citadel使用WebGL来渲染图形，但是真正让其与众不同的是在游戏引擎性能上的重要技术成就。这款游戏使用了Epic的Unreal引擎的一个版本，Unreal引擎最初是依赖于操作系统代码的C++程序，通过使用Emscripten 编译器和asm.js，被移植到了浏览器上，asm.js是一个新的被优化的底层JavaScript子级。只需简单的输入一个URL，浏览器用户就能获得一个美丽渲染的全屏的以每秒60帧率运行的操作游戏体验，而这只需很少的下载时间同时还不需要安装。</p>
-<p><img src="http://materliu.github.io/Programming-3D-Applications-With-HTML5-and-WebGL/assets/Chapter1-Introduction/figure1-2.png" alt="Figure1-2"></p>
-<p>图表1-2 跑在Firefox上的Epic Citadel演示程序：得益于WebGL和asm.js的60 fps的浏览器游戏；图片提供 Epic Games</p>
+                        <h1 id="3d-">3D是啥</h1>
+<p>既然你拿起了这本书开始阅读，我相信在我用术语3D图像的时候你至少有一个大概的概念。但是为了让你清楚明白，我们还需正式一点，过一下定义。这是维基百科上的解释：</p>
+<pre><code>3D计算机图形图像是相对于2D来说的。存储在计算机内用于执行运算和渲染2D图像的几何数据（常指笛卡尔）使用3维呈现出来的图像就叫做3D计算机图形图像。这些图像可以被存储用于后续展示或者实时呈现。
+</code></pre><p>让我们分解一下：1）数据被呈现在一个3D坐标系统上；2）最终还是被渲染成了一张2D图像，比如说渲染在了电脑显示器上；3）可以实时展示：当3D数据在动画或者被用户操作的时候，被渲染的图像要无明显延迟。这一点是创建交互应用的关键点。实际上，这一点太重要了，以至于其催生了一个专注于研究支持实时3D渲染的图形硬件的数万亿的产业，这其中有几个龙头企业，你一定听过，NVIDIA，ATI和Qualcomm。</p>
+<p>这定义提到的内容很重要，但有一点它没提到的也同样重要：3D图形图像不需要特制的输入设备，比如说轨迹球或者摇杆，尽管这些东西可以大大增强3D体验。它也不需要特制的显示硬件：不需要立体眼镜，不需要花钱跑去全天域剧场。3D图像更多的时候是被展示在一个平的2D屏幕上。这并不是说3D不能被立体展示，不能通过特制眼镜观看，不能呈现在立体TV上，只是说这些设备并不是必须的。</p>
+<p>3D程序开发要求传统的web开发者学习新的技能和知识。只需掌握一点入门知识和正确的工具，我们的学习过程将是非常快的。这章余下的内容致力于帮我们理解最基本的3D程序概念，这些概念将在本书中贯穿使用。本章余下的内容并不够详细的，但是这些介绍足够你很好的开始，我们将在全书更加细致地学习这些主题。如果你已经具有了3D编程的经验了，你可以直接跳到第二章。</p>
 
                     
                     </section>
@@ -288,10 +282,10 @@
         </div>
 
         
-        <a href="../Chapter1-Introduction/HTML5-a-new-visual-medium.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+        <a href="../Chapter1-Introduction/3D-Graphics-Basics.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../Chapter1-Introduction/Browser-Realities.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
+        <a href="../Chapter1-Introduction/3D-Coordinate-Systems.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

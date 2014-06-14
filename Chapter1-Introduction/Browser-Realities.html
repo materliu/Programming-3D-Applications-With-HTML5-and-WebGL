@@ -3,7 +3,7 @@
     <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
         
         <meta charset="UTF-8">
-        <title>浏览器平台 | Programming-3D-Applications-With-HTML5-and-WebGL</title>
+        <title>浏览器支持现状 | Programming-3D-Applications-With-HTML5-and-WebGL</title>
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="robots" content="index, follow">
@@ -13,13 +13,13 @@
         <meta name="generator" content="www.gitbook.io">
 
         
-        <link rel="next" href="../Chapter1-Introduction/Browser-Realities.html" />
+        <link rel="next" href="../Chapter1-Introduction/3D-Graphics-Basics.html" />
         
         
-        <link rel="prev" href="../Chapter1-Introduction/HTML5-a-new-visual-medium.html" />
+        <link rel="prev" href="../Chapter1-Introduction/The-Browser-as-Platform.html" />
         
 
-        <meta property="og:title" content="浏览器平台 | Programming-3D-Applications-With-HTML5-and-WebGL">
+        <meta property="og:title" content="浏览器支持现状 | Programming-3D-Applications-With-HTML5-and-WebGL">
         <meta property="og:site_name" content="Programming-3D-Applications-With-HTML5-and-WebGL">
         <meta property="og:type" content="book">
         <meta property="og:locale" content="en_US">
@@ -42,7 +42,7 @@
 
 
         
-    <div class="book" data-github="materliu/accessibility" data-level="2.2" data-basepath=".." data-revision="1402749378457">
+    <div class="book" data-github="materliu/accessibility" data-level="2.3" data-basepath=".." data-revision="1402749378457">
     <div class="book-header">
     <!-- Actions Left -->
     
@@ -108,7 +108,7 @@
             <a href="https://github.com/materliu/accessibility/issues" target="blank">Questions and Issues</a>
         </li>
         <li>
-            <a href="https://github.com/materliu/accessibility/edit/master/Chapter1-Introduction/The-Browser-as-Platform.md" target="blank">Edit and Contribute</a>
+            <a href="https://github.com/materliu/accessibility/edit/master/Chapter1-Introduction/Browser-Realities.md" target="blank">Edit and Contribute</a>
         </li>
         <li class="divider"></li>
         
@@ -230,7 +230,7 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 41.666666666666664%;min-width: 33.333333333333336%;"></div>
+        <div class="inner" style="width: 50%;min-width: 41.666666666666664%;"></div>
     </div>
     <div class="chapters">
     
@@ -246,7 +246,7 @@
     
         <a href="../Chapter1-Introduction/The-Browser-as-Platform.html" title="浏览器平台" class="chapter done " data-progress="2.2" style="left: 41.666666666666664%;"></a>
     
-        <a href="../Chapter1-Introduction/Browser-Realities.html" title="浏览器支持现状" class="chapter  " data-progress="2.3" style="left: 50%;"></a>
+        <a href="../Chapter1-Introduction/Browser-Realities.html" title="浏览器支持现状" class="chapter done " data-progress="2.3" style="left: 50%;"></a>
     
         <a href="../Chapter1-Introduction/3D-Graphics-Basics.html" title="3D图像基础" class="chapter  " data-progress="2.4" style="left: 58.333333333333336%;"></a>
     
@@ -265,20 +265,21 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_7">
+                    <section class="normal" id="section-gitbook_3">
                     
-                        <h1 id="-">浏览器平台</h1>
-<p>虽然HTML5为Web带来了富图形图像，但是如果没有必要的浏览器发展的支持便会毫无意义。实际上，是一系列的提升，为HTML5开发富互联网应用铺平了道路：</p>
-<p>JavaScript虚拟机性能</p>
-<pre><code>WebGL和Canvas2D都是JavaScript API；背后的JavaScript代码能跑多快，意味着动画和交互可以多快。几年前，虚拟机的性能问题让3D开发不能在实践应用中得以推广。谢天谢地，如今的虚拟机很给力。
-</code></pre><p>混合加速</p>
-<pre><code>浏览器要负责在页面上把各种元素迅速混合，并且不能有视觉痕迹。随着内容动态效果越来越强，浏览器在混合上也取得了巨大进步，包括对2D和3D等所有视觉元素使用3D硬件渲染。
-</code></pre><p>动画支持</p>
-<pre><code>在驱动动画上，通过引入了requestAnimationFrame()函数取代setInterval()和setTimeout()来进行提升。这个新方法可以大大提升性能，并通过允许开发者使用浏览器重绘内置页面元素的同一通道来重绘canvas元素的内容来消除视觉痕迹。
-</code></pre><p>HTML5浏览器同时也包含了一些其他的特性，比如说多线程编程(Web Workers)，全双工TCP/IP网络(WebSockets)，本地数据存储，以及更多的开发者可以用来创造世界级应用的功能。这些特性和WebGL, CSS3 3D,以及Canvas元素一起提供了一个革命性的新平台，借助这个平台我们可以在任何计算机和设备上构建相关的视觉程序。</p>
-<p>图表1-2展示了一个运行在Firefox开发版下的Epic公司的游戏Epic Citadel的演示版本。 Epic Citadel使用WebGL来渲染图形，但是真正让其与众不同的是在游戏引擎性能上的重要技术成就。这款游戏使用了Epic的Unreal引擎的一个版本，Unreal引擎最初是依赖于操作系统代码的C++程序，通过使用Emscripten 编译器和asm.js，被移植到了浏览器上，asm.js是一个新的被优化的底层JavaScript子级。只需简单的输入一个URL，浏览器用户就能获得一个美丽渲染的全屏的以每秒60帧率运行的操作游戏体验，而这只需很少的下载时间同时还不需要安装。</p>
-<p><img src="http://materliu.github.io/Programming-3D-Applications-With-HTML5-and-WebGL/assets/Chapter1-Introduction/figure1-2.png" alt="Figure1-2"></p>
-<p>图表1-2 跑在Firefox上的Epic Citadel演示程序：得益于WebGL和asm.js的60 fps的浏览器游戏；图片提供 Epic Games</p>
+                        <h1 id="-">浏览器支持现状</h1>
+<p>在本书编写的时候， 3D特性在不同浏览器的支持情况并不完全。基本上，每个浏览器都支持了一个不尽相同的特性子级。在后续的章节中我们将详尽描述这些问题，现在先看几点概要：</p>
+<ul>
+<li><p>所有的桌面浏览器都支持WebGL。微软在2013年后半年推出的IE11中开始支持WebGL。尽管实现的要比其他桌面浏览器晚，微软还是很可能快速赶上的。</p>
+</li>
+<li><p>基本上所有的手机浏览器也都支持WebGL，包括Android上的Chrome，Android和Firefox OS上的Firefox， Kindle Fire HDX上的Amazon Silk，Intel的新Tizen操作系统上和BlackBerry 10上的浏览器。在手机Safari上WebGL的支持受限，只在iAds框架中可用。(译者注：2014年6月2日苹果WWDC大会发布的iOS8中，Safari开始全面支持WebGL。)</p>
+</li>
+<li><p>CSS 3D 变换在所有浏览器和移动平台都支持。CSS定制滤镜只在桌面Chrome，Safari，移动Safari和BlackBerry10中被实验性支持，IE和Firefox不支持。</p>
+</li>
+</ul>
+<p>很明显，这样的情况并不是很乐观，但这也是web应用开发征程中的必经阶段。跨浏览器支持一直都是臭名昭著的困难，然而随着HTML5特性的爆发式增长和设备与操作系统的更新换代，情况已经变得好多了。值得欣慰的是另一个备选方案更糟糕，那就是本地程序，其更难构建，测试，部署和分发。就说这么多吧，也许21世纪web开发者命中注定如此。</p>
+<p>【页内标注】</p>
+<p>按照标准走，终有一天，我们只需要写一套代码。但是现状，我们仍需痛苦的承受，圣语“一次编写，到处运行”已经被悼词“一次编写，到处调试”所取代。</p>
 
                     
                     </section>
@@ -288,10 +289,10 @@
         </div>
 
         
-        <a href="../Chapter1-Introduction/HTML5-a-new-visual-medium.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+        <a href="../Chapter1-Introduction/The-Browser-as-Platform.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../Chapter1-Introduction/Browser-Realities.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
+        <a href="../Chapter1-Introduction/3D-Graphics-Basics.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
