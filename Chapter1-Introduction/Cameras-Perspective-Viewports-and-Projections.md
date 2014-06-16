@@ -9,3 +9,5 @@
 ![Figure1-7](http://materliu.github.io/Programming-3D-Applications-With-HTML5-and-WebGL/assets/Chapter1-Introduction/figure1-7.png)
 
 图表1-7. 摄像机，视区和投影； 授权使用
+
+摄像机超级强大，因为它最终定义了观察者和3D场景之间的关系并提供了一种真实的感受。它同时给动画制作者的军火库提供了另一件武器，通过动态的移动摄像机，动画制作者可以创建电影效果和控制叙述体验。
