@@ -3,7 +3,7 @@
     <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
         
         <meta charset="UTF-8">
-        <title>第一章. 概论 | Programming-3D-Applications-With-HTML5-and-WebGL</title>
+        <title>着色器 | Programming-3D-Applications-With-HTML5-and-WebGL</title>
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="robots" content="index, follow">
@@ -13,13 +13,11 @@
         <meta name="generator" content="www.gitbook.io">
 
         
-        <link rel="next" href="../Chapter1-Introduction/HTML5-a-new-visual-medium.html" />
         
-        
-        <link rel="prev" href="../basics/audience.html" />
+        <link rel="prev" href="../Chapter1-Introduction/Transforms-and-Matrices.html" />
         
 
-        <meta property="og:title" content="第一章. 概论 | Programming-3D-Applications-With-HTML5-and-WebGL">
+        <meta property="og:title" content="着色器 | Programming-3D-Applications-With-HTML5-and-WebGL">
         <meta property="og:site_name" content="Programming-3D-Applications-With-HTML5-and-WebGL">
         <meta property="og:type" content="book">
         <meta property="og:locale" content="en_US">
@@ -42,7 +40,7 @@
 
 
         
-    <div class="book" data-github="materliu/accessibility" data-level="2" data-basepath=".." data-revision="1402905827212">
+    <div class="book" data-github="materliu/accessibility" data-level="2.10" data-basepath=".." data-revision="1402905827212">
     <div class="book-header">
     <!-- Actions Left -->
     
@@ -108,7 +106,7 @@
             <a href="https://github.com/materliu/accessibility/issues" target="blank">Questions and Issues</a>
         </li>
         <li>
-            <a href="https://github.com/materliu/accessibility/edit/master/Chapter1-Introduction/README.md" target="blank">Edit and Contribute</a>
+            <a href="https://github.com/materliu/accessibility/edit/master/Chapter1-Introduction/Shaders.md" target="blank">Edit and Contribute</a>
         </li>
         <li class="divider"></li>
         
@@ -238,7 +236,7 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 23.076923076923077%;min-width: 15.384615384615385%;"></div>
+        <div class="inner" style="width: 38.46153846153846%;min-width: 30.76923076923077%;"></div>
     </div>
     <div class="chapters">
     
@@ -250,9 +248,9 @@
     
         <a href="../Chapter1-Introduction/README.html" title="第一章. 概论" class="chapter done new-chapter" data-progress="2" style="left: 23.076923076923077%;"></a>
     
-        <a href="../Chapter1-Introduction/HTML5-a-new-visual-medium.html" title="新的视觉载体HTML5" class="chapter  " data-progress="2.1" style="left: 30.76923076923077%;"></a>
+        <a href="../Chapter1-Introduction/HTML5-a-new-visual-medium.html" title="新的视觉载体HTML5" class="chapter done " data-progress="2.1" style="left: 30.76923076923077%;"></a>
     
-        <a href="../Chapter1-Introduction/Shaders.html" title="着色器" class="chapter  " data-progress="2.10" style="left: 38.46153846153846%;"></a>
+        <a href="../Chapter1-Introduction/Shaders.html" title="着色器" class="chapter done " data-progress="2.10" style="left: 38.46153846153846%;"></a>
     
         <a href="../Chapter1-Introduction/The-Browser-as-Platform.html" title="浏览器平台" class="chapter  " data-progress="2.2" style="left: 46.15384615384615%;"></a>
     
@@ -275,19 +273,26 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_7">
+                    <section class="normal" id="section-gitbook_8">
                     
-                        <h1 id="-">概述</h1>
-<p>我们生活在一个3D的世界。人们在一个三维空间内移动，思考和体验。</p>
-<p>尽管我们很多的媒体通常被呈现在平幕上，它们其实也是3D的。动画影片是通过电脑生成的3D图片构建的。在线的地图服务允许我们在一个仿真的3D环境中去探索我们的目的地。无论是跑在专用的游戏机上的还是手机上的大多数视频游戏都是3D呈现的。甚至新闻也进入了3D时代，几年前，CNN的分析员在一个仿真的虚拟环境中漫步聊天看上去还是那么滑稽尴尬，如今已经变成了广播环境中被接纳的一部分，用来争取更多的用户电缆信道（译者注：即增加收视率)，以便在24小时的新闻周期内增加影响力。</p>
-<p>3D图像几乎和电脑本身一样久远，可以追溯到1960年代。它已经被用于跨域工程，教育，培训，建筑，金融，销售，市场，游戏以及娱乐的各种程序中。历史上，3D应用程序依赖于高端电脑系统和昂贵的软件。但在最近的十年这一情况得到了极大的改观。3D处理硬件基本在每台电脑和手机中都有，今天的消费智能机处理图形图像的能力远强于15年前的专业工作站。最重要的是，用于渲染3D的软件不仅可以轻易得到而且免费。它被称为浏览器。</p>
-<p>100,000 Stars是一个基于浏览器的用来在银河系虚拟漫游我们星球周边的3D模拟器，图表1-1是100,000 Stars。通过使用鼠标，你可以旋转星系中的星球，并在某个感兴趣的星体上放大。星体被按照他们原有的形体和颜色被模拟呈现。每个星体上都有他们常用名字的标签，当你的鼠标悬停到标签上，它便高亮。点击标签，一个浮层便会出现，上边是维基百科上关于这颗星球的介绍。点击浮层上介绍中的某个超链接，浏览器会在新标签中打开对应的地址。100,000 Stars通过美丽的渲染，动画效果，宏伟的声效，以及与2D用户界面的巧妙组合带来了一种绝妙的交互体验。</p>
-<p><img src="http://materliu.github.io/Programming-3D-Applications-With-HTML5-and-WebGL/assets/Chapter1-Introduction/figure1-1.jpg" alt="Figure1-1"></p>
-<p>图标1-1. 谷歌的100,000 Stars项目; 图片提供 Google,Inc.</p>
-<p>100,000 Stars是谷歌的数据艺术团队为了展示Chrome浏览器的超强特性而开展的一个实验项目。虽然这个项目是实验性的，但是它所用到的技术却不是：它构建于现如今大多数浏览器都支持的HTML5特性之上。银河系和星体通过WebGL来实时渲染（WebGL是硬件加速3D web图形图像的新标准）；相对于其对应星体放置的标签是通过CSS3中现有的3D转换实现的；以及浮层内容可以无缝和3D内容混合在一起得益于浏览器的组合特性，即所有的页面元素被统一呈现。</p>
-<p>本书就是来说说如何通过利用当代浏览器的这些惊人特性来创建一个全新的特性相关的视觉上的应用。这些应用中的一些可能看上去跟之前的一些产品，那些传统的3D产品很像，我们仅仅是重构之后拿出来并降低成本。但令人兴奋的点在于这些新奇的消费者应用在广告，产品市场，消费者支持，教育，培训，旅游，游戏，以及娱乐方面的无尽可能。3D通过和web技术的结合给交互体验带来了一个新的维度，第三维现如今可以被这个星球上的任何人轻易获取。</p>
-<p>【页内标注】100,000 Stars项目算得上交互媒体开发的一个标杆。其中的一个开发者，Michael Chang写了一个关于这个项目的很棒的案例研究。想看它是如何被开发的，访问：http://
-www.html5rocks.com/en/tutorials/casestudies/100000stars/.【译者注：需翻墙】</p>
+                        <h1 id="-">着色器</h1>
+<p>为了渲染一个网格的最终图像，一个开发者必须精确定义顶点，变换，矩阵和光照以及摄像机之间如何交互来创建这个图像。开发者通过着色器来实现这一目的。一个着色器(也被成为可编程着色器)是一段实现了把网格上的像素转换到屏幕上的算法的程序代码。图形图像硬件可以理解顶点，纹理和其他几个小项，但是对材料，光照，变换或者摄像机没概念。这些高层建筑通过着色器程序来解释。着色器通常用高级语言，类C的语言编写后编译成能被GPU(图像处理单元)使用的代码。</p>
+<p>【页内标注】</p>
+<p>所有的现代计算机和设备都配有GPU，用来区别于CPU，专项渲染3D图像。本书所讲的大部分3D编程技术基于GPU的存在。</p>
+<p>取色器在程序员的指尖生辉， 在每次图片渲染时，产生全面控制每一个像素点的神奇魔力。我们在好莱坞电影里边，CG动画电影里，以及今天实时渲染的视频游戏中看到的不可思议的视觉效果都得益于取色器的强大力量。如今取色器在浏览器中支持了，在我们的WebGL应用程序中我们可以实现和顶尖视频游戏一样的效果，就像我们通过CSS控制元素如何在页面中呈现和动画一样。</p>
+<p>图表1-8展示了一个被一个可编程取色器渲染的WebGL水的模拟。水中的涟漪和起舞的光影都不可思议的真实，同时你可以实时跟模拟的场景交互。注意哦：这可是跑在浏览器里边的！</p>
+<p><img src="http://materliu.github.io/Programming-3D-Applications-With-HTML5-and-WebGL/assets/Chapter1-Introduction/figure1-8.png" alt="Figure1-8"></p>
+<p>图表1-8. Evan Wallace实现的使用可编程取色器的WebGL水模拟； 授权使用</p>
+<p>基于取色器的效果并不仅限于WebGL；通过另外一个实验性技术CSS定制滤镜可以将其应用于DOM元素。我们在第六章讨论CSS定制滤镜。</p>
+<p>相对于我们本书将要介绍的取色器知识点，还有几个小事情需要注意一下。</p>
+<ul>
+<li>WebGL和CSS定制滤镜都是用OpenGL ES取色器语言(简称：GLSL ES)定义的取色器。尽管基本语言是相同的，你为WebGL和CSS编写的取色器会有些许不同。</li>
+<li>WebGL要求开发者应用取色器以便物体被绘制。如果没有取色器被应用，或者在编译加载取色器的过程中出错，物体则不会被渲染在屏幕上。</li>
+<li>CSS3滤镜中，取色器是可选的。在CSS3滤镜中一旦应用了取色器，就被称为一个定制化滤镜。</li>
+<li>2D的Canvas API不支持可编程取色器。假如你希望在WebGL渲染中使用2D Canvas绘制作为一个降级方案，你需要在你的渲染代码中处理这一点。第七章详解更多关于这的内容。</li>
+</ul>
+<p>取色器中有一些新概念，同时是另一种编程语言还有很多点需要注意，导致其有一定的学习曲线。如果这点让你气馁，不要担心。有很多著名的开源库和工具供我们选择用来隐藏取色器血淋淋的细节。尽管我建议你无论如何尝试一下编写GLSL的代码，但坦白来说，也许你的整个3D编程生涯都不需要写一行GLSL的代码。</p>
+<p>以上内容就是3D图形图像的基础了。本书中，每种技术的细节展开可能会些许不同，但一定是围绕每个技术的核心概念展开的。在接下来的几章，我们将进一步深入到用WebGL，CSS3和Canvas 2D创建和动画3D内容的细节中。</p>
 
                     
                     </section>
@@ -297,10 +302,8 @@ www.html5rocks.com/en/tutorials/casestudies/100000stars/.【译者注：需翻�
         </div>
 
         
-        <a href="../basics/audience.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+        <a href="../Chapter1-Introduction/Transforms-and-Matrices.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
         
-        
-        <a href="../Chapter1-Introduction/HTML5-a-new-visual-medium.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
