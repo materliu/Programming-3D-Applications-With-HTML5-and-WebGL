@@ -12,4 +12,4 @@
 	* [网格，多边形和顶点](Chapter1-Introduction/Meshes-Polygons-and-Vertices.md)
 	* [材料，纹理和光照](Chapter1-Introduction/Materials-Textures-and-Lights.md)
 	* [变换和矩阵](Chapter1-Introduction/Transforms-and-Matrices.md)
-	* [摄像机，透视，视区和投影](Chapter1-Introduction/Cameras-Perspective-Viewports-and-Projections.md)
+	* [着色器](Chapter1-Introduction/Shaders.md)
